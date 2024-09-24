@@ -12,36 +12,36 @@ document.getElementById('donate1').addEventListener('click', function (event) {
         alert('You dont have enough balance')
     }
     else if (inputValue !== null && !isNaN(inputValue) && inputValue > 0) {
-        
+
         const preTotalDonation1 = getInnerValue('balance1');
-        const newInputValue1=parseFloat(inputValue);
+        const newInputValue1 = parseFloat(inputValue);
         const newTotalDonation1 = preTotalDonation1 + newInputValue1;
         document.getElementById('balance1').innerText = newTotalDonation1;
-         
 
-        const tempBalance1=getInnerValue('balance');
-        const newTempbalance=tempBalance1-newInputValue1;
+
+        const tempBalance1 = getInnerValue('balance');
+        const newTempbalance = tempBalance1 - newInputValue1;
         // console.log(tempBalance1, newTotalDonation1 );
-        document.getElementById('balance').innerText= newTempbalance;
-        document.getElementById('input1').value='';
-        const s="flood at Noakhali, Bangladesh";
-        const div= join(newInputValue1,s);
-        const p=document.createElement("p");
+        document.getElementById('balance').innerText = newTempbalance;
+        document.getElementById('input1').value = '';
+        const s = "flood at Noakhali, Bangladesh";
+        const div = join(newInputValue1, s);
+        const p = document.createElement("p");
 
         const now = new Date();
         const dateTimeString = `Date : ${now.toString()}`;
         p.innerText = dateTimeString;
         div.appendChild(p);
-        appenChild('transection',div);
+        appenChild('transection', div);
 
         // model1
         const modal = document.getElementById('my-modal');
-       const openModalBtn = document.getElementById('donate1');
-       const closeModalBtn = document.getElementById('close');
-       modal.classList.add('modal-open');
-       closeModalBtn.addEventListener('click', function() {
-        modal.classList.remove('modal-open');
-      });
+        const openModalBtn = document.getElementById('donate1');
+        const closeModalBtn = document.getElementById('close');
+        modal.classList.add('modal-open');
+        closeModalBtn.addEventListener('click', function () {
+            modal.classList.remove('modal-open');
+        });
 
     }
     else {
@@ -63,36 +63,36 @@ document.getElementById('donate2').addEventListener('click', function (event) {
         alert('You dont have enough balance')
     }
     else if (inputValue !== null && !isNaN(inputValue) && inputValue > 0) {
-       
+
         const preTotalDonation2 = getInnerValue('balance2');
-        const newInputValue2=parseFloat(inputValue);
+        const newInputValue2 = parseFloat(inputValue);
         const newTotalDonation2 = preTotalDonation2 + newInputValue2;
         document.getElementById('balance2').innerText = newTotalDonation2;
-         
 
-        const tempBalance2=getInnerValue('balance');
-        const newTempbalance=tempBalance2-newInputValue2;
+
+        const tempBalance2 = getInnerValue('balance');
+        const newTempbalance = tempBalance2 - newInputValue2;
         // console.log(tempBalance1, newTotalDonation1 );
-        document.getElementById('balance').innerText= newTempbalance;
-        document.getElementById('input2').value='';
-        const s="flood relief in feni, Bangladesh";
-        const div= join(newInputValue2,s);
-        const p=document.createElement("p");
+        document.getElementById('balance').innerText = newTempbalance;
+        document.getElementById('input2').value = '';
+        const s = "flood relief in feni, Bangladesh";
+        const div = join(newInputValue2, s);
+        const p = document.createElement("p");
 
         const now = new Date();
         const dateTimeString = `Date : ${now.toString()}`;
         p.innerText = dateTimeString;
         div.appendChild(p);
-        appenChild('transection',div);
+        appenChild('transection', div);
 
 
-         // model2
-         const modal = document.getElementById('my-modal2');
-         const openModalBtn = document.getElementById('donate2');
-         const closeModalBtn = document.getElementById('close2');
-         modal.classList.add('modal-open');
-         closeModalBtn.addEventListener('click', function() {
-          modal.classList.remove('modal-open');
+        // model2
+        const modal = document.getElementById('my-modal2');
+        const openModalBtn = document.getElementById('donate2');
+        const closeModalBtn = document.getElementById('close2');
+        modal.classList.add('modal-open');
+        closeModalBtn.addEventListener('click', function () {
+            modal.classList.remove('modal-open');
         });
 
 
@@ -117,29 +117,35 @@ document.getElementById('donate3').addEventListener('click', function (event) {
         alert('You dont have enough balance')
     }
     else if (inputValue !== null && !isNaN(inputValue) && inputValue > 0) {
-        
+
         const preTotalDonation3 = getInnerValue('balance3');
-        const newInputValue3=parseFloat(inputValue);
+        const newInputValue3 = parseFloat(inputValue);
         const newTotalDonation3 = preTotalDonation3 + newInputValue3;
         document.getElementById('balance3').innerText = newTotalDonation3;
-         
 
-        const tempBalance3=getInnerValue('balance');
-        const newTempbalance=tempBalance3-newInputValue3;
+
+        const tempBalance3 = getInnerValue('balance');
+        const newTempbalance = tempBalance3 - newInputValue3;
         // console.log(tempBalance1, newTotalDonation1 );
-        document.getElementById('balance').innerText= newTempbalance;
-        document.getElementById('input3').value='';
+        document.getElementById('balance').innerText = newTempbalance;
+        document.getElementById('input3').value = '';
 
-        const s=" injured in the Quota Movement, Bangladesh";
-        const div= join(newInputValue3,s);
-        const p=document.createElement("p");
+        const s = " injured in the Quota Movement, Bangladesh";
+        const div = join(newInputValue3, s);
+        const p = document.createElement("p");
 
         const now = new Date();
         const dateTimeString = `Date : ${now.toString()}`;
         p.innerText = dateTimeString;
         div.appendChild(p);
-        appenChild('transection',div);
-
+        appenChild('transection', div);
+        const modal = document.getElementById('my-modal3');
+        const openModalBtn = document.getElementById('donate3');
+        const closeModalBtn = document.getElementById('close3');
+        modal.classList.add('modal-open');
+        closeModalBtn.addEventListener('click', function () {
+            modal.classList.remove('modal-open');
+        });
 
     }
     else {
@@ -147,12 +153,6 @@ document.getElementById('donate3').addEventListener('click', function (event) {
     }
 
 
-    const modal = document.getElementById('my-modal3');
-    const openModalBtn = document.getElementById('donate3');
-    const closeModalBtn = document.getElementById('close3');
-    modal.classList.add('modal-open');
-    closeModalBtn.addEventListener('click', function() {
-     modal.classList.remove('modal-open');
-   });
+
 
 })

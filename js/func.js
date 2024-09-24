@@ -10,7 +10,7 @@ function getInnerValue(id) {
 }
 
 function appenChild(id, val) {
-    document.getElementById(id).prepend(val);
+    document.getElementById(id).appendChild(val);
 }
 
 function join(val, s) {
