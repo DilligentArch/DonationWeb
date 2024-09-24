@@ -24,22 +24,14 @@ document.getElementById('donate1').addEventListener('click', function (event) {
         // console.log(tempBalance1, newTotalDonation1 );
         document.getElementById('balance').innerText= newTempbalance;
         document.getElementById('input1').value='';
+        const s="flood at Noakhali, Bangladesh";
+        const div= join(newInputValue1,s);
+        const p=document.createElement("p");
 
-
-        const div=document.createElement('div');
-        div.classList.add('border-2');
-        div.classList.add('rounded-xl');
-        div.classList.add('py-5');
-        div.classList.add('pt-2');
-        const h= document.createElement('h3');
-        h.innerText= `
-        ${newInputValue1} is donated for Flood at Noakhali, Bangladesh.
-        `;
-        h.classList.add('text-lg');
-        h.classList.add('text-semibold');
-        div.appendChild(h);
-
-
+        const now = new Date();
+        const dateTimeString = `Date : ${now.toString()}`;
+        p.innerText = dateTimeString;
+        div.appendChild(p);
         appenChild('transection',div);
 
     }
@@ -74,6 +66,15 @@ document.getElementById('donate2').addEventListener('click', function (event) {
         // console.log(tempBalance1, newTotalDonation1 );
         document.getElementById('balance').innerText= newTempbalance;
         document.getElementById('input2').value='';
+        const s="flood relief in feni, Bangladesh";
+        const div= join(newInputValue2,s);
+        const p=document.createElement("p");
+
+        const now = new Date();
+        const dateTimeString = `Date : ${now.toString()}`;
+        p.innerText = dateTimeString;
+        div.appendChild(p);
+        appenChild('transection',div);
 
 
     }
@@ -109,6 +110,16 @@ document.getElementById('donate3').addEventListener('click', function (event) {
         // console.log(tempBalance1, newTotalDonation1 );
         document.getElementById('balance').innerText= newTempbalance;
         document.getElementById('input3').value='';
+
+        const s=" injured in the Quota Movement, Bangladesh";
+        const div= join(newInputValue3,s);
+        const p=document.createElement("p");
+
+        const now = new Date();
+        const dateTimeString = `Date : ${now.toString()}`;
+        p.innerText = dateTimeString;
+        div.appendChild(p);
+        appenChild('transection',div);
 
 
     }
