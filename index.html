@@ -40,7 +40,7 @@
             <div class="flex gap-1 ">
                 <img class="h-6 mt-3" src="assets/coin.png" alt="">
                 <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3]">
-                    <span>5500</span>
+                    <span id="balance">5500</span>
                     BDT
                 </h2>
             </div>
@@ -65,7 +65,7 @@
                 <div class="flex gap-1 bg-[#1111110d] rounded-lg mt-4 w-32 pb-2 pl-2">
                     <img class="h-6 mt-3" src="assets/coin.png" alt="">
                     <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3]">
-                        <span>7000</span>
+                        <span id="balance1">7000</span>
                         BDT
                     </h2>
                 </div>
@@ -77,8 +77,8 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, nam autem aperiam, velit, quam sapiente quaerat eum alias asperiores perspiciatis pariatur dolor porro quia molestiae eaque a dolorem quasi repellendus?
                     Quasi iste hic rerum doloremque saepe unde a quo nostrum reiciendis odit deserunt velit exercitationem nulla modi vitae natus incidunt quae sunt iusto soluta, repellendus sequi, at esse? Nesciunt, tenetur?
                 </p>
-                <input class="my-4 border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl " type="number" placeholder="Write Donation Amount" >
-                <button class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold ">
+                <input id="input1" class="my-4 border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl " type="number" placeholder="Write Donation Amount" >
+                <button id="donate1" class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold ">
                     Donate Now
                 </button>
             </div>
@@ -93,7 +93,7 @@
                 <div class="flex gap-1 bg-[#1111110d] rounded-lg mt-4 w-32 pb-2 pl-2">
                     <img class="h-6 mt-3" src="assets/coin.png" alt="">
                     <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3]">
-                        <span>7000</span>
+                        <span id="balance2">7000</span>
                         BDT
                     </h2>
                 </div>
@@ -105,8 +105,8 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, nam autem aperiam, velit, quam sapiente quaerat eum alias asperiores perspiciatis pariatur dolor porro quia molestiae eaque a dolorem quasi repellendus?
                     Quasi iste hic rerum doloremque saepe unde a quo nostrum reiciendis odit deserunt velit exercitationem nulla modi vitae natus incidunt quae sunt iusto soluta, repellendus sequi, at esse? Nesciunt, tenetur?
                 </p>
-                <input class="my-4  border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl mt-10" type="number" placeholder="Write Donation Amount" >
-                <button class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold mt-4">
+                <input id="input2" class="my-4  border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl mt-10" type="number" placeholder="Write Donation Amount" >
+                <button id="donate2" class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold mt-4">
                     Donate Now
                 </button>
             </div>
@@ -120,7 +120,7 @@
                 <div class="flex gap-1 bg-[#1111110d] rounded-lg mt-4 w-32 pb-2 pl-2">
                     <img class="h-6 mt-3" src="assets/coin.png" alt="">
                     <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3]">
-                        <span>7000</span>
+                        <span id="balance3" >7000</span>
                         BDT
                     </h2>
                 </div>
@@ -133,7 +133,7 @@
                     Quasi iste hic rerum doloremque saepe unde a quo nostrum reiciendis odit deserunt velit exercitationem nulla modi vitae natus incidunt quae sunt iusto soluta, repellendus sequi, at esse? Nesciunt, tenetur?
                 </p>
                <div class="mt-16">
-                <input class="my-4 border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl type="number" placeholder="Write Donation Amount" >
+                <input  class="my-4 border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl type="number" placeholder="Write Donation Amount" >
                 <button class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold ">
                     Donate Now
                 </button>
@@ -143,7 +143,8 @@
         </section>
 
     </main>
-    <footer></footer>
+    <script src="js/index.js"></script>
+    <script src="js/func.js"></script>
 </body>
 
 </html>
