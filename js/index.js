@@ -12,7 +12,7 @@ document.getElementById('donate1').addEventListener('click', function (event) {
         alert('You dont have enough balance')
     }
     else if (inputValue !== null && !isNaN(inputValue) && inputValue > 0) {
-        alert('Succesful');
+        
         const preTotalDonation1 = getInnerValue('balance1');
         const newInputValue1=parseFloat(inputValue);
         const newTotalDonation1 = preTotalDonation1 + newInputValue1;
@@ -34,6 +34,15 @@ document.getElementById('donate1').addEventListener('click', function (event) {
         div.appendChild(p);
         appenChild('transection',div);
 
+        // model1
+        const modal = document.getElementById('my-modal');
+       const openModalBtn = document.getElementById('donate1');
+       const closeModalBtn = document.getElementById('close');
+       modal.classList.add('modal-open');
+       closeModalBtn.addEventListener('click', function() {
+        modal.classList.remove('modal-open');
+      });
+
     }
     else {
         alert('Invalid input');
@@ -54,7 +63,7 @@ document.getElementById('donate2').addEventListener('click', function (event) {
         alert('You dont have enough balance')
     }
     else if (inputValue !== null && !isNaN(inputValue) && inputValue > 0) {
-        alert('Succesful');
+       
         const preTotalDonation2 = getInnerValue('balance2');
         const newInputValue2=parseFloat(inputValue);
         const newTotalDonation2 = preTotalDonation2 + newInputValue2;
@@ -75,6 +84,16 @@ document.getElementById('donate2').addEventListener('click', function (event) {
         p.innerText = dateTimeString;
         div.appendChild(p);
         appenChild('transection',div);
+
+
+         // model2
+         const modal = document.getElementById('my-modal2');
+         const openModalBtn = document.getElementById('donate2');
+         const closeModalBtn = document.getElementById('close2');
+         modal.classList.add('modal-open');
+         closeModalBtn.addEventListener('click', function() {
+          modal.classList.remove('modal-open');
+        });
 
 
     }
@@ -98,7 +117,7 @@ document.getElementById('donate3').addEventListener('click', function (event) {
         alert('You dont have enough balance')
     }
     else if (inputValue !== null && !isNaN(inputValue) && inputValue > 0) {
-        alert('Succesful');
+        
         const preTotalDonation3 = getInnerValue('balance3');
         const newInputValue3=parseFloat(inputValue);
         const newTotalDonation3 = preTotalDonation3 + newInputValue3;
@@ -126,5 +145,14 @@ document.getElementById('donate3').addEventListener('click', function (event) {
     else {
         alert('Invalid input');
     }
+
+
+    const modal = document.getElementById('my-modal3');
+    const openModalBtn = document.getElementById('donate3');
+    const closeModalBtn = document.getElementById('close3');
+    modal.classList.add('modal-open');
+    closeModalBtn.addEventListener('click', function() {
+     modal.classList.remove('modal-open');
+   });
 
 })

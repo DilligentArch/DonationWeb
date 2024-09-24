@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-        .lexend{
+        .lexend {
             font-family: "Lexend", sans-serif;
-            
-           
+
+
         }
     </style>
     <title>DonattionWeb</title>
@@ -23,12 +25,14 @@
         <div class="flex justify-around pt-5 pb-8 bg-[#F9F7F3]">
             <div class="bg-green-300 w-20 rounded-lg">
 
+               <a href="blog.html">
                 <button id="blognav">
-                    <div  class="mt-2 ml-5 font-semibold text-xl">
+                    <div class="mt-2 ml-5 font-semibold text-xl">
                         Blog
 
                     </div>
                 </button>
+               </a>
 
             </div>
 
@@ -50,104 +54,160 @@
         <div class="flex justify-evenly mt-4 ">
             <div class="flex gap-4">
                 <div id="donation" class="bg-green-300 w-24 rounded-lg py-2 pl-3 font-semibold">Donation</div>
-                <div id="history" class="w-24 rounded-lg py-2 pl-4 font-semibold border-solid border-2 text-[#111111b3]">History
+                <div id="history"
+                    class="w-24 rounded-lg py-2 pl-4 font-semibold border-solid border-2 text-[#111111b3]">History
                 </div>
             </div>
         </div>
 
     </header>
     <main>
-     <div id="main-con">
-           <!-- Section1 -->
-           <section class="lg:flex border-solid border-2 mt-4 lg:w-11/12 mx-auto py-5 rounded-xl px-4">
-            <div class="lg:w-2/4 "><img src="assets/noakhali.png" alt=""></div>
-            <div class="lg:w-2/4">
-                <!-- Total -->
-                <div class="flex gap-1 bg-[#1111110d] rounded-lg mt-4 w-32 pb-2 pl-2">
-                    <img class="h-6 mt-3" src="assets/coin.png" alt="">
-                    <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3]">
-                        <span id="balance1">7000</span>
-                        BDT
-                    </h2>
+        <div id="main-con">
+            <!-- Section1 -->
+            <section class="lg:flex border-solid border-2 mt-4 lg:w-11/12 mx-auto py-5 rounded-xl px-4">
+                <div class="lg:w-2/4 "><img src="assets/noakhali.png" alt=""></div>
+                <div class="lg:w-2/4">
+                    <!-- Total -->
+                    <div class="flex gap-1 bg-[#1111110d] rounded-lg mt-4 w-32 pb-2 pl-2">
+                        <img class="h-6 mt-3" src="assets/coin.png" alt="">
+                        <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3]">
+                            <span id="balance1">7000</span>
+                            BDT
+                        </h2>
+                    </div>
+                    <h1 class="my-5 text-center lg:text-start font-bold text-xl">
+                        Donate for Flood at Noakhali, Bangladesh
+                    </h1>
+
+                    <p class="text-[#111111b3] text-center lg:text-start">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, nam autem aperiam, velit, quam
+                        sapiente quaerat eum alias asperiores perspiciatis pariatur dolor porro quia molestiae eaque a
+                        dolorem quasi repellendus?
+                        Quasi iste hic rerum doloremque saepe unde a quo nostrum reiciendis odit deserunt velit
+                        exercitationem nulla modi vitae natus incidunt quae sunt iusto soluta, repellendus sequi, at
+                        esse? Nesciunt, tenetur?
+                    </p>
+                    <input id="input1" class="my-4 border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl "
+                        type="number" placeholder="Write Donation Amount">
+                    <button id="donate1" class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold ">
+                        Donate Now
+                    </button>
+
+                    <!-- Modal -->
+                    <div id="my-modal" class="modal">
+                        <div class="modal-box border-none">
+                            <h3 class="font-bold text-2xl w-2/4 my-5 mx-auto pl-11">Congrates!</h3>
+                            <img class=" mx-auto my-3" src="assets/coin.png" alt="">
+                            <p class="py-4 pl-16 mx-auto my-4 ml-10">You have donated for humankind</p>
+                            <h3 class="font-bold w-2/4 mx-auto text-2xl my-5 pl-11">Succesfully</h3>
+                            <div class="modal-action">
+                                <button id="close" class="btn mx-auto">Close Confirmation</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h1 class="my-5 text-center lg:text-start font-bold text-xl">
-                    Donate for Flood at Noakhali, Bangladesh
-                </h1>
-    
-                <p class="text-[#111111b3] text-center lg:text-start">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, nam autem aperiam, velit, quam sapiente quaerat eum alias asperiores perspiciatis pariatur dolor porro quia molestiae eaque a dolorem quasi repellendus?
-                    Quasi iste hic rerum doloremque saepe unde a quo nostrum reiciendis odit deserunt velit exercitationem nulla modi vitae natus incidunt quae sunt iusto soluta, repellendus sequi, at esse? Nesciunt, tenetur?
-                </p>
-                <input id="input1" class="my-4 border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl " type="number" placeholder="Write Donation Amount" >
-                <button id="donate1" class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold ">
-                    Donate Now
-                </button>
-            </div>
-            
-        </section>
 
-        <!-- Section2 -->
-        <section class="lg:flex border-solid border-2 mt-4 lg:w-11/12 mx-auto py-5 rounded-xl px-4">
-            <div class="lg:w-2/4 "><img src="assets/feni.png" alt=""></div>
-            <div class="lg:w-2/4">
-                <!-- Total -->
-                <div class="flex gap-1 bg-[#1111110d] rounded-lg mt-4 w-32 pb-2 pl-2">
-                    <img class="h-6 mt-3" src="assets/coin.png" alt="">
-                    <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3]">
-                        <span id="balance2">7000</span>
-                        BDT
-                    </h2>
+            </section>
+
+            <!-- Section2 -->
+            <section class="lg:flex border-solid border-2 mt-4 lg:w-11/12 mx-auto py-5 rounded-xl px-4">
+                <div class="lg:w-2/4 "><img src="assets/feni.png" alt=""></div>
+                <div class="lg:w-2/4">
+                    <!-- Total -->
+                    <div class="flex gap-1 bg-[#1111110d] rounded-lg mt-4 w-32 pb-2 pl-2">
+                        <img class="h-6 mt-3" src="assets/coin.png" alt="">
+                        <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3]">
+                            <span id="balance2">7000</span>
+                            BDT
+                        </h2>
+                    </div>
+                    <h1 class="my-5 text-center lg:text-start font-bold text-xl">
+                        Donate for Flood Relief in Feni,Bangladesh
+                    </h1>
+
+                    <p class="text-[#111111b3] text-center lg:text-start">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, nam autem aperiam, velit, quam
+                        sapiente quaerat eum alias asperiores perspiciatis pariatur dolor porro quia molestiae eaque a
+                        dolorem quasi repellendus?
+                        Quasi iste hic rerum doloremque saepe unde a quo nostrum reiciendis odit deserunt velit
+                        exercitationem nulla modi vitae natus incidunt quae sunt iusto soluta, repellendus sequi, at
+                        esse? Nesciunt, tenetur?
+                    </p>
+                    <input id="input2" class="my-4  border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl mt-10"
+                        type="number" placeholder="Write Donation Amount">
+                    <button id="donate2" class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold mt-4">
+                        Donate Now
+                    </button>
+                    <!-- model2 -->
+
+                    <div id="my-modal2" class="modal">
+                        <div class="modal-box border-none">
+                            <h3 class="font-bold text-2xl w-2/4 my-5 mx-auto pl-11">Congrats!</h3>
+                            <img class=" mx-auto my-3" src="assets/coin.png" alt="">
+                            <p class="py-4 pl-16 mx-auto my-4 ml-10">You have donated for humankind</p>
+                            <h3 class="font-bold w-2/4 mx-auto text-2xl my-5 pl-11">Successfully</h3>
+                            <div class="modal-action">
+                                <button id="close2" class="btn mx-auto">Close Confirmation</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <h1 class="my-5 text-center lg:text-start font-bold text-xl">
-                    Donate for Flood Relief in Feni,Bangladesh
-                </h1>
-    
-                <p class="text-[#111111b3] text-center lg:text-start">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, nam autem aperiam, velit, quam sapiente quaerat eum alias asperiores perspiciatis pariatur dolor porro quia molestiae eaque a dolorem quasi repellendus?
-                    Quasi iste hic rerum doloremque saepe unde a quo nostrum reiciendis odit deserunt velit exercitationem nulla modi vitae natus incidunt quae sunt iusto soluta, repellendus sequi, at esse? Nesciunt, tenetur?
-                </p>
-                <input id="input2" class="my-4  border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl mt-10" type="number" placeholder="Write Donation Amount" >
-                <button id="donate2" class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold mt-4">
-                    Donate Now
-                </button>
-            </div>
-            
-        </section>
-        <!-- section3 -->
-        <section class="lg:flex border-solid border-2 mt-4 lg:w-11/12 mx-auto py-5 rounded-xl px-4">
-            <div class="lg:w-2/4 "><img src="assets/quota-protest.png" alt=""></div>
-            <div class="lg:w-2/4">
-                <!-- Total -->
-                <div class="flex gap-1 bg-[#1111110d] rounded-lg mt-4 w-32 pb-2 pl-2">
-                    <img class="h-6 mt-3" src="assets/coin.png" alt="">
-                    <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3]">
-                        <span id="balance3" >7000</span>
-                        BDT
-                    </h2>
+
+            </section>
+            <!-- section3 -->
+            <section class="lg:flex border-solid border-2 mt-4 lg:w-11/12 mx-auto py-5 rounded-xl px-4">
+                <div class="lg:w-2/4 "><img src="assets/quota-protest.png" alt=""></div>
+                <div class="lg:w-2/4">
+                    <!-- Total -->
+                    <div class="flex gap-1 bg-[#1111110d] rounded-lg mt-4 w-32 pb-2 pl-2">
+                        <img class="h-6 mt-3" src="assets/coin.png" alt="">
+                        <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3]">
+                            <span id="balance3">7000</span>
+                            BDT
+                        </h2>
+                    </div>
+                    <h1 class="my-5 text-center lg:text-start font-bold text-xl">
+                        Aid for Injured in the Quota Movement
+                    </h1>
+
+                    <p class="text-[#111111b3] text-center lg:text-start">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, nam autem aperiam, velit, quam
+                        sapiente quaerat eum alias asperiores perspiciatis pariatur dolor porro quia molestiae eaque a
+                        dolorem quasi repellendus?
+                        Quasi iste hic rerum doloremque saepe unde a quo nostrum reiciendis odit deserunt velit
+                        exercitationem nulla modi vitae natus incidunt quae sunt iusto soluta, repellendus sequi, at
+                        esse? Nesciunt, tenetur?
+                    </p>
+                    <div class="mt-16">
+                        <input id="input3"
+                            class="my-4 border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl type=" number"
+                            placeholder="Write Donation Amount">
+                        <button id="donate3" class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold ">
+                            Donate Now
+                        </button>
+                    </div>
+                    <!-- model3 -->
+                    <div id="my-modal3" class="modal">
+                        <div class="modal-box border-none">
+                            <h3 class="font-bold text-2xl w-2/4 my-5 mx-auto pl-11">Congrates!</h3>
+                            <img class=" mx-auto my-3" src="assets/coin.png" alt="">
+                            <p class="py-4 pl-16 mx-auto my-4 ml-10">You have donated for humankind</p>
+                            <h3 class="font-bold w-2/4 mx-auto text-2xl my-5 pl-11">Succesfully</h3>
+                            <div class="modal-action">
+                                <button id="close3" class="btn mx-auto">Close Confirmation</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h1 class="my-5 text-center lg:text-start font-bold text-xl">
-                    Aid for Injured in the Quota Movement
-                </h1>
-    
-                <p class="text-[#111111b3] text-center lg:text-start">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, nam autem aperiam, velit, quam sapiente quaerat eum alias asperiores perspiciatis pariatur dolor porro quia molestiae eaque a dolorem quasi repellendus?
-                    Quasi iste hic rerum doloremque saepe unde a quo nostrum reiciendis odit deserunt velit exercitationem nulla modi vitae natus incidunt quae sunt iusto soluta, repellendus sequi, at esse? Nesciunt, tenetur?
-                </p>
-               <div class="mt-16">
-                <input id="input3" class="my-4 border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl type="number" placeholder="Write Donation Amount" >
-                <button id="donate3" class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold ">
-                    Donate Now
-                </button>
-               </div>
-            </div>
-            
-        </section>
-     </div>
 
-     <div id="transection" class="w-3/4 mx-auto hidden ">
+            </section>
+        </div>
+
+        <div id="transection" class="w-3/4 mx-auto hidden ">
 
 
-     </div>
+        </div>
 
     </main>
     <script src="js/index.js"></script>
