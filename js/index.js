@@ -26,6 +26,22 @@ document.getElementById('donate1').addEventListener('click', function (event) {
         document.getElementById('input1').value='';
 
 
+        const div=document.createElement('div');
+        div.classList.add('border-2');
+        div.classList.add('rounded-xl');
+        div.classList.add('py-5');
+        div.classList.add('pt-2');
+        const h= document.createElement('h3');
+        h.innerText= `
+        ${newInputValue1} is donated for Flood at Noakhali, Bangladesh.
+        `;
+        h.classList.add('text-lg');
+        h.classList.add('text-semibold');
+        div.appendChild(h);
+
+
+        appenChild('transection',div);
+
     }
     else {
         alert('Invalid input');
@@ -58,6 +74,41 @@ document.getElementById('donate2').addEventListener('click', function (event) {
         // console.log(tempBalance1, newTotalDonation1 );
         document.getElementById('balance').innerText= newTempbalance;
         document.getElementById('input2').value='';
+
+
+    }
+    else {
+        alert('Invalid input');
+    }
+
+})
+
+// Donate3
+document.getElementById('donate3').addEventListener('click', function (event) {
+
+    event.preventDefault();
+    const balance = document.getElementById('balance').innerText;
+    const newBalance = parseFloat(balance);
+
+
+    const inputValue = getInput('input3')
+
+    if (newBalance == 0 || inputValue > newBalance) {
+        alert('You dont have enough balance')
+    }
+    else if (inputValue !== null && !isNaN(inputValue) && inputValue > 0) {
+        alert('Succesful');
+        const preTotalDonation3 = getInnerValue('balance3');
+        const newInputValue3=parseFloat(inputValue);
+        const newTotalDonation3 = preTotalDonation3 + newInputValue3;
+        document.getElementById('balance3').innerText = newTotalDonation3;
+         
+
+        const tempBalance3=getInnerValue('balance');
+        const newTempbalance=tempBalance3-newInputValue3;
+        // console.log(tempBalance1, newTotalDonation1 );
+        document.getElementById('balance').innerText= newTempbalance;
+        document.getElementById('input3').value='';
 
 
     }

@@ -8,3 +8,7 @@ function getInnerValue(id){
      const val= parseFloat(temp);
      return val;
 }
+
+function appenChild(id,val){
+    document.getElementById(id).appendChild(val);
+}

@@ -23,8 +23,8 @@
         <div class="flex justify-around pt-5 pb-8 bg-[#F9F7F3]">
             <div class="bg-green-300 w-20 rounded-lg">
 
-                <button>
-                    <div class="mt-2 ml-5 font-semibold">
+                <button id="blognav">
+                    <div  class="mt-2 ml-5 font-semibold text-xl">
                         Blog
 
                     </div>
@@ -34,12 +34,12 @@
 
             <div class="flex gap-1">
                 <img src="assets/logo.png" alt="">
-                <h1 class="pt-4 font-semibold">Donate Bangladesh</h1>
+                <h1 class="pt-4 font-semibold text-xl">Donate Bangladesh</h1>
             </div>
 
             <div class="flex gap-1 ">
                 <img class="h-6 mt-3" src="assets/coin.png" alt="">
-                <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3]">
+                <h2 class="flex gap-1 pt-3 font-medium text-[#111111b3] ">
                     <span id="balance">5500</span>
                     BDT
                 </h2>
@@ -49,16 +49,17 @@
         <!-- Donation & History -->
         <div class="flex justify-evenly mt-4 ">
             <div class="flex gap-4">
-                <div class="bg-green-300 w-24 rounded-lg py-2 pl-3 font-semibold">Donation</div>
-                <div class="w-24 rounded-lg py-2 pl-4 font-semibold border-solid border-2 text-[#111111b3]">History
+                <div id="donation" class="bg-green-300 w-24 rounded-lg py-2 pl-3 font-semibold">Donation</div>
+                <div id="history" class="w-24 rounded-lg py-2 pl-4 font-semibold border-solid border-2 text-[#111111b3]">History
                 </div>
             </div>
         </div>
 
     </header>
     <main>
-        <!-- Section1 -->
-        <section class="lg:flex border-solid border-2 mt-4 lg:w-11/12 mx-auto py-5 rounded-xl px-4">
+     <div id="main-con">
+           <!-- Section1 -->
+           <section class="lg:flex border-solid border-2 mt-4 lg:w-11/12 mx-auto py-5 rounded-xl px-4">
             <div class="lg:w-2/4 "><img src="assets/noakhali.png" alt=""></div>
             <div class="lg:w-2/4">
                 <!-- Total -->
@@ -133,18 +134,26 @@
                     Quasi iste hic rerum doloremque saepe unde a quo nostrum reiciendis odit deserunt velit exercitationem nulla modi vitae natus incidunt quae sunt iusto soluta, repellendus sequi, at esse? Nesciunt, tenetur?
                 </p>
                <div class="mt-16">
-                <input  class="my-4 border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl type="number" placeholder="Write Donation Amount" >
-                <button class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold ">
+                <input id="input3" class="my-4 border-solid border-2 w-full pl-5 text-[#11111166] rounded-xl type="number" placeholder="Write Donation Amount" >
+                <button id="donate3" class="bg-green-300 w-full py-1 rounded-xl text-lg font-semibold ">
                     Donate Now
                 </button>
                </div>
             </div>
             
         </section>
+     </div>
+
+     <div id="transection" class="w-3/4 mx-auto hidden ">
+
+
+     </div>
 
     </main>
     <script src="js/index.js"></script>
     <script src="js/func.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/toggle.js"></script>
 </body>
 
 </html>
